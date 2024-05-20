@@ -44,8 +44,16 @@ The Cnfigurations of floorplan:-
 ![Screenshot (588)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/7d1d78d2-d05f-42a7-ba58-b74b8f898197)
 
 ### MAGIC Tool
-To open the magic window use the command ```magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def & ```
+To open the magic window use the command
 
+```magic -T home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def & ```
+![Screenshot (589)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/aead14f9-489a-4e8e-926f-371cc215dd2c)
+- To select entire layout click on ```s``` and then click on ``` v ``` to make it centre.
+
+## Placement
+To run the placement type the command ```run_placement```
+
+We perform the global placement first which is used to achieve less wire length.
 
 
 
