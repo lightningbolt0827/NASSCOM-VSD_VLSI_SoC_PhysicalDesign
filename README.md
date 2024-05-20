@@ -9,6 +9,7 @@
 - Open the OPENLANE Docker by using the command ``` docker ``` from the directory of 'openlane' inside 'openlane_working_dir' directory.
 
 - Then run the opelane in interactive mode using ```./flow.tcl -interactive``` and  run the command ```prep -design picorv32a```  to merge the lef file.
+
 ![Screenshot from 2024-05-20 18-48-50](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a95cee91-20e8-4517-9a05-2639797894b7)
 
 - After Design Preparation run the Synthesis command ```run_synthesis```
@@ -114,13 +115,53 @@ The following modifications are made in the spice file
 
 ![Screenshot (602)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/b692b295-9fee-44e9-bb6a-d2849afe50de)
 
-To run the spice simulation, execute the commnad ```ngspice sky130_inv.spice```
+To run the spice simulation, execute the command ```ngspice sky130_inv.spice```
 
 ![Screenshot (603)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/142fc573-2258-4211-87ae-39b07c07ab14)
 
 Next run the command ```plot y vs time a```
 
 ![Screenshot (604)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0acb24cd-5702-4be1-89b2-e48ed83d3a9e)
+
+**Calculation of Rise time and Fall time Delay**
+
+Rise time is defined as the duration it takes for a signal to transition from 20% to 80% of its final value. The rise time can be calculated as [2.19 - 2.13[ x 10^-9 = 62.7 ps.
+
+Zoom in to get the value of signal at 20% and 80% of VDD.
+
+![Screenshot (605)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/cb62a7b5-6c9c-4fb1-844e-382a79772ecb)
+
+The following values can also be obtained by the below method
+
+![Screenshot (606)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/b81ade40-7cbd-40c1-a260-d0118f3efafe)
+
+Fall time is the duration it takes for a signal to transition from 80% to 20% of its final value. The fall time is calculated as [4.09 - 4.053] x 10^-9 = 41.97 ps.
+
+The Values can be calculated as:
+![Screenshot (607)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/fec8a6ac-f382-4099-88ed-5f628d80fdae)
+
+**Calculation of Propagation Delay**
+
+Propagation delay is the time it takes for a signal to travel from the input to the output of a circuit. For instance, the propagation delay can be calculated as  [2.15 - 2.10] x10^-9 = 48.9ps
+
+The Screen shot of Propagation Delay
+
+![Screenshot (608)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/d043d674-a230-4875-89f3-760763b5441c)
+
+## DRC correction and rules
+
+To perform DRC correction, we have to execute the command ```wget http://opencircuitdesign.comopen_pdks/archive/drc_tests.tgz```
+
+![Screenshot (609)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f9a41636-d13e-4f74-a709-3765c5659109)
+
+By Using command ```magic -d XR open the magic tool``` Open the met3.mag file
+
+![Screenshot (610)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/77e4693f-fb3c-4ecf-bd60-30c9ff8d9f2c)
+
+To find the DRC Error, select the part containing the error and type the command ```why``` in the console
+
+![Screenshot (612)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2fff6b4d-6ed2-4b7c-af31-b0b188dbeacc)
+
 
 
 
