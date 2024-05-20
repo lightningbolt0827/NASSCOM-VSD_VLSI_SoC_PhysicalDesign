@@ -1,8 +1,5 @@
 # NASSCOM-VSD_VLSI_SoC_PhysicalDesign
 
-![1](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/42004cf8-e290-4f2e-ae4c-230247f6b1bf)
-
-
 
 # Refrences
 GitHub repo for vsd standard cell design : https://github.com/nickson-jose/vsdstdcelldesign
