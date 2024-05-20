@@ -12,6 +12,8 @@ Then run the opelane in interactive mode using ```./flow.tcl -interactive``` and
 ![Screenshot from 2024-05-20 18-48-50](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a95cee91-20e8-4517-9a05-2639797894b7)
 
 After Design Preparation run the Synthesis command ```run_synthesis```
+![Screenshot from 2024-05-20 19-38-27](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/4e8dd6ee-62b7-4fec-8a5a-0dd9ceafcfe1)
+
 
 # Refrences
 GitHub repo for vsd standard cell design : https://github.com/nickson-jose/vsdstdcelldesign
