@@ -31,6 +31,8 @@ Flop Ratio = Number of flops / Number of cells = 1613/14876 = 0.108 = 10.8%
 # DAY 2
 ## Floorplan
 There are various floorplan configurations that can be modified based on the requirement
+![Screenshot from 2024-05-20 20-25-00](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c6455acc-9baa-4ffb-b0db-ab3a1768478e)
+
 
 Run the floorplan using ```run_floorplan```
 ![Screenshot (585)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5dccfb9b-8ada-4e4f-a249-f656939122c8)
