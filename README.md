@@ -212,6 +212,10 @@ After removing the error
 
 # Day 5
 
+Using the command ```gen_pdn``` build power distribution network
+
+![Screenshot (634)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/37f2472d-0593-48be-a7e9-da7e94e98e83)
+
 
 
 
@@ -235,16 +239,19 @@ To execute the automated rounting, we run the command ```run_routing```
 
 ![Screenshot (624)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6f408b5b-5ed6-4b4e-8404-80caf2c28abb)
 
+![Screenshot (633)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a4bc924e-71c9-41af-a99f-27424d985d8b)
+
 Routed Layout
+
+![Screenshot (632)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ab2672ed-d92a-4c35-96b0-472d40d2e36d)
+
+After zooming in
 
 ![Screenshot (627)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/e57127a6-6273-4607-8b94-f6f5d16ca53e)
 
 Final image of the layout
 
 ![Screenshot (626)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6e20d4bc-27c9-456c-af41-89015928bcee)
-
-
-
 
 
 
