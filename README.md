@@ -162,12 +162,33 @@ To find the DRC Error, select the part containing the error and type the command
 
 ![Screenshot (612)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2fff6b4d-6ed2-4b7c-af31-b0b188dbeacc)
 
+To see contact cuts execute the command ```cif see VIA2``` in the console 
 
+![Screenshot (613)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/748496c9-2dc1-4ae0-9fae-2a879e38e67d)
 
+There are many DRC errors found, to fix one of the error i.e, error poly.9 follow the follwing steps
 
+- ```nwell.mag``` is loaded
 
+- Find out why is the error occuring
 
+![Screenshot (614)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/7f4e7d46-300b-4d76-afd0-4b5ad27068a2)
 
+![Screenshot (615)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c44a84fc-d1f8-48c0-8aaf-f3393fb5b7e7)
+
+![Screenshot (618)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/43d46368-2c33-4353-95ea-77d7a765d2f3)
+
+- As we can see, the spacing is 220µm, which does not meet the minimum size requirements.
+
+- Fixing the Error
+
+To fix this DRC error we make some changes in the sky130A.tech file
+
+![Screenshot (616)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/225f73df-997f-4f3f-bf84-a543d01e5aae)
+
+- After the changes, load the sky130A.tech file perform the DRC to check the poly.9 error
+
+![Screenshot (617)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2b88e13a-3413-4724-9d02-5706cacb069e)
 
 
 
