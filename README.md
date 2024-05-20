@@ -98,7 +98,29 @@ The inverter std_cell which was cloned is opened as shown in the figure
 
 ![Screenshot (599)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ec624432-c5cd-460b-a8bb-aa915f0b64bd)
 
+Characteristics of PMOS and NMOS of the inverter
 
+![Screenshot (600)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/d930aa2a-52ba-4ebf-be91-0a9f0b4ddeb8)
+
+- Next, create the extraction of inverter by executing the following command in console: ```extract all```
+ 
+- To Create the spice file run the command ```ext2spice cthresh 0 rthresh 0``` follwed by ```ext2spice``` in console
+
+The files are generated as shown in the figure
+
+![Screenshot (601)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/056f69d3-9dcb-4463-bc9f-f45987fa4ca0)
+
+The following modifications are made in the spice file
+
+![Screenshot (602)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/b692b295-9fee-44e9-bb6a-d2849afe50de)
+
+To run the spice simulation, execute the commnad ```ngspice sky130_inv.spice```
+
+![Screenshot (603)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/142fc573-2258-4211-87ae-39b07c07ab14)
+
+Next run the command ```plot y vs time a```
+
+![Screenshot (604)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0acb24cd-5702-4be1-89b2-e48ed83d3a9e)
 
 
 
