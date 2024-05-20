@@ -1,10 +1,10 @@
-# DAY 1
+# DAY 1 Introduction to SoC Design Flow and Running Synthesis
 ## INTRO to SOC
 
 
 ## OPENLANE
 
-DESIGN PREPARATION:
+**DESIGN PREPARATION**
 
 - Open the OPENLANE Docker by using the command ``` docker ``` from the directory of 'openlane' inside 'openlane_working_dir' directory.
 
@@ -28,7 +28,7 @@ Flop Ratio = Number of flops / Number of cells = 1613/14876 = 0.108 = 10.8%
 
 ![Screenshot (584)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/67619e6a-7aa5-4a6d-87b4-70fa9a2a6f4b)
 
-# DAY 2
+# DAY 2 Floorplan and Placement
 ## Floorplan
 There are various floorplan configurations that can be modified based on the requirement
 ![Screenshot from 2024-05-20 20-25-00](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c6455acc-9baa-4ffb-b0db-ab3a1768478e)
@@ -57,11 +57,12 @@ To open the magic window use the command
 ![Screenshot (589)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/aead14f9-489a-4e8e-926f-371cc215dd2c)
 
 The cells in the layout can be identified by selecting the cell and typing the command ```what``` in the console
+
 ![Screenshot (591)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ddb71550-40af-477a-8aaf-7ccac8ce8ac9)
 
 As shown in the floorplan, all the macros, IPs, and ports are placed in their designated locations. However, the standard cells have not been placed yet and are currently located at the origin.
-![Screenshot (594)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0da32900-3613-4ced-aef1-39386229ccf7)
 
+![Screenshot (594)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0da32900-3613-4ced-aef1-39386229ccf7)
 
 
 ## Placement
@@ -70,6 +71,17 @@ To run the placement type the command ```run_placement```
 We perform the global placement first which is used to achieve less wire length.
 
 To Open the layout after placement type the command ```magic -T home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def & ```
+
+Below is the image of the **layout after runnig placement**
+
+![Screenshot (592)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/406273b4-ff32-43f4-a83f-b03319ec9212)
+
+Layout when Zoomed in
+
+![Screenshot (593)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2663731e-4580-4bf3-aba0-ec0c539fd826)
+
+
+# Day 3
 
 
 
