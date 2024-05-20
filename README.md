@@ -40,20 +40,37 @@ Run the floorplan using ```run_floorplan```
 The output logs files which are generated after floorplan:-
 ![Screenshot (586)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0150027e-06f7-4c50-a480-341ed9e30350)
 
-The Cnfigurations of floorplan:-
+The Configurations of floorplan:-
+
 ![Screenshot (588)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/7d1d78d2-d05f-42a7-ba58-b74b8f898197)
 
 ### MAGIC Tool
+
+The Magic tool is an open-source layout editor used for VLSI design. It provides a graphical interface for viewing and editing IC layouts, allowing designers to inspect and modify the floorplan, placement, and routing of their designs. Magic is widely used for its ease of use and integration with other tools in the ASIC design flow.
+
 To open the magic window use the command
 
 ```magic -T home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def & ```
-![Screenshot (589)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/aead14f9-489a-4e8e-926f-371cc215dd2c)
+
 - To select entire layout click on ```s``` and then click on ``` v ``` to make it centre.
+
+![Screenshot (589)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/aead14f9-489a-4e8e-926f-371cc215dd2c)
+
+The cells in the layout can be identified by selecting the cell and typing the command ```what``` in the console
+![Screenshot (591)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ddb71550-40af-477a-8aaf-7ccac8ce8ac9)
+
+As shown in the floorplan, all the macros, IPs, and ports are placed in their designated locations. However, the standard cells have not been placed yet and are currently located at the origin.
+![Screenshot (594)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0da32900-3613-4ced-aef1-39386229ccf7)
+
+
 
 ## Placement
 To run the placement type the command ```run_placement```
 
 We perform the global placement first which is used to achieve less wire length.
+
+To Open the layout after placement type the command ```magic -T home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.placement.def & ```
+
 
 
 
