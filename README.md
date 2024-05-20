@@ -76,21 +76,27 @@ Below is the image of the **layout after runnig placement**
 
 ![Screenshot (592)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/406273b4-ff32-43f4-a83f-b03319ec9212)
 
-Layout when Zoomed in
-
-![Screenshot (593)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2663731e-4580-4bf3-aba0-ec0c539fd826)
-
-We can see that the IO is placed diagonally equividistant in the floorplan. This is can be changed in the command present in config.tcl
-
-![Screenshot (595)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f6314307-9a2e-4ff1-aac8-18e837204948)
 
 # Day 3 Design of Inverter cell using and transient chara of the designed cell using spice
+We can see that the IO is placed diagonally equividistant in the floorplan.
 
+![Screenshot (596)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/632084de-8f9d-4985-8499-60310e0031a2)
 
+ This is can be changed in the command present in config.tcl
+ 
+![Screenshot (595)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f6314307-9a2e-4ff1-aac8-18e837204948)
 
+In the next step we clone the inverter cell from the Github repository. 
 
+To Clone, run the following command in working directory: ```git clone https://github.com/nickson-jose/vsdstdcelldesign.git```
 
+![Screenshot (597)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/4300d960-4494-4e29-be27-83fa4981b9a8)
 
+To open the layout in Magic tool, Use the command ```magic -T {absolute_path_of_the_tech_file_of_the_cell} {absolute_path_of_the_mag_file_of_the_cell}```
+
+The inverter std_cell which was cloned is opened as shown in the figure
+
+![Screenshot (599)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ec624432-c5cd-460b-a8bb-aa915f0b64bd)
 
 
 
