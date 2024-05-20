@@ -188,8 +188,21 @@ To fix this DRC error we make some changes in the sky130A.tech file
 
 - After the changes, load the sky130A.tech file perform the DRC to check the poly.9 error
 
-![Screenshot (617)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/2b88e13a-3413-4724-9d02-5706cacb069e)
+![Screenshot (621)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/bd5f6b54-6208-408b-9dcf-97d42d6b14c2)
 
+### Now we perforam an activity to show a DRC error as a geometric construct:
+
+Open ```nwell.mag``` and execute the following commands in the console
+
+![Screenshot (619)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/26dafecb-9a7f-4313-972e-189f4b7d58cc)
+
+To remove the error, open the tech file and make thefollwing changes:
+
+![Screenshot (620)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/e57d8fe9-319b-4ed8-a6da-d487a85229e7)
+
+After removing the error
+
+![Screenshot (623)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/68772f26-fe72-443b-b204-ad36f2702388)
 
 
 # Refrences
