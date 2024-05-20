@@ -205,6 +205,50 @@ After removing the error
 ![Screenshot (623)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/68772f26-fe72-443b-b204-ad36f2702388)
 
 
+
+
+
+
+
+# Day 5
+
+
+
+
+
+
+## Routing
+**Triton Routing**
+
+![Screenshot (631)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/d1ddc942-4eb0-4e97-81bf-6faa799f01de)
+
+![Screenshot (630)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/8ee6f231-dfa2-4c2c-8ffa-96a670e24f02)
+
+![Screenshot (629)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/3c548b3c-f43d-4333-9acc-56f3197b92d8)
+
+![Screenshot (628)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/3da808ff-8f36-4f6d-b863-a7dce9211c92)
+
+
+TritonRouting algorithm is used for rounting.
+
+To execute the automated rounting, we run the command ```run_routing```
+
+![Screenshot (624)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6f408b5b-5ed6-4b4e-8404-80caf2c28abb)
+
+Routed Layout
+
+![Screenshot (627)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/e57127a6-6273-4607-8b94-f6f5d16ca53e)
+
+Final image of the layout
+
+![Screenshot (626)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6e20d4bc-27c9-456c-af41-89015928bcee)
+
+
+
+
+
+
+
 # Refrences
 GitHub repo for vsd standard cell design : https://github.com/nickson-jose/vsdstdcelldesign
 
