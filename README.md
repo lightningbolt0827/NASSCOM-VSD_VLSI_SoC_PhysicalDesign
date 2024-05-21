@@ -207,6 +207,40 @@ After removing the error
 
 
 
+# Day 4 - Prelayout design and Clock Tree Synthesis
+
+
+**Primary Requirement for P&R:**
+
+The I/O ports must be positioned at the junctions where the vertical and horizontal tracks intersect. The standard cell's width should be an odd multiple of the track's horizontal pitch. Additionally, the standard cell's height must be an odd multiple of the track's vertical pitch.
+
+Coverting to grid info by using command ```grid [xSpacing [ySpacing [xOrigin yOrigin]]]``` 
+i.e, ```grid 0.46um 0.34um 0.23um 0.17um```
+
+![Screenshot (635)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f22e92f6-a189-41d3-ad7d-48b66a93d981)
+
+![Screenshot (636)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0999ef79-fe53-4b37-aeaa-ca69116fdc59)
+
+The new file is generated to edit the changes, the contents of new file is as follows
+
+![Screenshot (638)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/3a2cbe13-10d4-4528-b617-40829ecdc825)
+
+Make the following changes to the ```config.tcl``` file after copying ```.lib``` and ```.lef``` files to ```src``` of the picorv32a
+
+![Screenshot (639)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/78cdee82-80c9-4310-9f48-f75ed0b75562)
+
+Run the flow from the beginning and then run the following command
+
+```set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs```
+
+Then run the command ```run_synthesis``` to check the new inverter is added to the picorv32a
+
+![Screenshot (640)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/162c2670-78c7-4c7e-845c-4e705b44b28f)
+
+But the slack is not yet met. We can do the follwoing changes to remove the error
+
+![Screenshot (643)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5355240b-1388-45ba-b897-b31ec588ee4b)
 
 
 
