@@ -231,20 +231,89 @@ Make the following changes to the ```config.tcl``` file after copying ```.lib```
 
 Run the flow from the beginning and then run the following command
 
-```set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
-add_lefs -src $lefs```
+```set lefs  $::env(DESIGN_DIR)/src/*.lef```
+```add_lefs -src $lefs```
 
 Then run the command ```run_synthesis``` to check the new inverter is added to the picorv32a
 
 ![Screenshot (640)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/162c2670-78c7-4c7e-845c-4e705b44b28f)
 
-But the slack is not yet met. We can do the follwoing changes to remove the error
+But the slack is not yet met. We can do the follwoing changes to remove the slack
 
 ![Screenshot (643)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5355240b-1388-45ba-b897-b31ec588ee4b)
 
+The slack is removed
+
+![Screenshot (644)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/774113c7-e7f6-4cec-b67c-09d829370b2c)
+
+
+Then run the following commands to run floorplan
+- ```init_floorplan```
+- ```place_io```
+- ```tap_decap_or```
+
+Run ```run_placement```
+
+Using the magic layout, we can view the placement layout and our custom cells
+
+![Screenshot (645)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ff8f30ed-7672-448f-9d87-b90940c47c99)
+
+![Screenshot (646)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/d36486d8-9239-4262-9a8c-185510f7da23)
+
+## Post Timing Analysis using OpenSTA
+
+Create ```pre_sta.conf``` file and ```my_base.sdc``` file using the following commands
+
+![Screenshot (647)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/cca4b83d-9afb-419d-99c0-60c94cd2a713)
+
+Make the following changes
+
+![Screenshot (648)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0c4c0b52-3c3a-4bb4-81fd-a41dc7fe7f79)
+
+Now run STA ```sta pre_sta.con```
+
+![Screenshot (649)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/bce36d3a-664d-4af4-9109-b712b99b6db5)
+
+Then use the command ```write_verilog``` to save the design into a file, which overwrites the current synthesis file. Placement is then carried out using the generated netlist.
+
+![Screenshot (650)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c7994b61-5c19-4769-85ab-aa6a105343eb)
+
+- Use the command ```run_cts``` to run clock tree synthesis
+
+-  ```_cts.v``` file will be generated as the result of synthesis.
+
+![Screenshot (651)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/92910214-3b38-4892-8458-a981400bc4ca)
+
+Use the following commands to analyse timing using real clocks
+
+```read_lef /openLANE_flow/designs/picorv32a/runs/04-05_21-50/tmp/merged.lef```
+
+```read_def /openLANE_flow/designs/picorv32a/runs/04-05_21-50/results/cts/picorv32a.cts.def```
+
+```write_db pico_cts.db```
+
+```read_db pico_cts.db```
+
+```read_verilog /openLANE_flow/designs/picorv32a/runs/04-05_21-50/results/synthesis/picorv32a.synthesis_cts.v```
+
+```read_liberty $::env(LIB_SYNTH_COMPLETE)```
+
+```read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc```
+
+```set_propagated_clock [all_clocks]```
+
+```report_checks -path_delay min_max -format full_clock_expanded -digits 4```
+
+![Screenshot (652)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/fe4c0370-935f-46e5-8d40-3d94d6308ded)
 
 
 # Day 5
+
+**Building Power Distribution Network**
+
+A Power Distribution Network (PDN) in a System on Chip (SoC) ensures efficient and reliable delivery of power across the chip. It includes components like power pads, bumps, power rings, and a mesh of horizontal and vertical metal lines, along with decoupling capacitors and voltage regulators. Key design considerations involve managing IR drop, electromigration, dynamic and static power consumption, and ground bounce. The PDN design process involves defining power requirements, performing simulations to analyze power integrity issues, optimizing the network for performance and reliability, and validating the final design through post-layout simulations and testing to ensure robust operation.
+
+![Screenshot (654)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6fddc8d8-04d1-43f3-9b3d-303b3db79ba4)
 
 Using the command ```gen_pdn``` build power distribution network
 
