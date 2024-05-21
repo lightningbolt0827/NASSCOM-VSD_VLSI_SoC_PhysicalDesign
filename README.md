@@ -1,8 +1,11 @@
 # DAY 1 Introduction to SoC Design Flow and Running Synthesis
-## INTRO to SOC
 
+## OPENLANE Flow
 
-## OPENLANE
+OpenLane is an open-source digital ASIC (Application-Specific Integrated Circuit) design flow that integrates a comprehensive set of tools for designing and implementing digital circuits. It is part of the broader effort to make VLSI (Very-Large-Scale Integration) design accessible and affordable by leveraging open-source tools and methodologies.
+
+![Screenshot (655)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/eabb22a1-52e8-4f2a-848d-f7ce64558cd8)
+
 
 **DESIGN PREPARATION**
 
@@ -318,11 +321,6 @@ A Power Distribution Network (PDN) in a System on Chip (SoC) ensures efficient a
 Using the command ```gen_pdn``` build power distribution network
 
 ![Screenshot (634)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/37f2472d-0593-48be-a7e9-da7e94e98e83)
-
-
-
-
-
 
 ## Routing
 **Triton Routing**
