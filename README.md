@@ -17,7 +17,8 @@ OpenLane is an open-source digital ASIC (Application-Specific Integrated Circuit
 
 - After Design Preparation run the Synthesis command ```run_synthesis```
 
-![Screenshot from 2024-05-20 19-38-27](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/4e8dd6ee-62b7-4fec-8a5a-0dd9ceafcfe1)
+![Screenshot from 2024-05-27 22-51-13](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/e9882dc7-3f1f-495e-99da-8a454fb3fb10)
+
 Synthesis is Successful
 
 ![1](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/67c5e191-8f42-49e4-8944-5d67baf04089)
