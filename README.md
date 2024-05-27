@@ -229,7 +229,7 @@ i.e, ```grid 0.46um 0.34um 0.23um 0.17um```
 
 ![Screenshot (635)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f22e92f6-a189-41d3-ad7d-48b66a93d981)
 
-![Screenshot (636)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0999ef79-fe53-4b37-aeaa-ca69116fdc59)
+![Screenshot from 2024-05-27 17-44-18](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/719b53ea-f991-47bd-8620-370934134c4e)
 
 The new file is generated to edit the changes, the contents of new file is as follows
 
@@ -247,6 +247,9 @@ Run the flow from the beginning and then run the following command
 Then run the command ```run_synthesis``` to check the new inverter is added to the picorv32a
 
 ![Screenshot (640)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/162c2670-78c7-4c7e-845c-4e705b44b28f)
+
+![Screenshot from 2024-05-27 19-38-33](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/3fa8beb9-418c-49a4-be23-dec0a51fd79a)
+
 
 But the slack is not yet met. We can do the follwoing changes to remove the slack
 
@@ -272,9 +275,7 @@ Using the magic layout, we can view the placement layout and our custom cells
 
 ## Post Timing Analysis using OpenSTA
 
-Create ```pre_sta.conf``` file and ```my_base.sdc``` file using the following commands
-
-![Screenshot (647)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/cca4b83d-9afb-419d-99c0-60c94cd2a713)
+Create ```pre_sta.conf``` file and ```my_base.sdc``` file 
 
 Make the following changes
 
@@ -286,13 +287,15 @@ Now run STA ```sta pre_sta.con```
 
 Then use the command ```write_verilog``` to save the design into a file, which overwrites the current synthesis file. Placement is then carried out using the generated netlist.
 
-![Screenshot (650)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c7994b61-5c19-4769-85ab-aa6a105343eb)
-
+## Clock Tree Synthesis
 - Use the command ```run_cts``` to run clock tree synthesis
 
 -  ```_cts.v``` file will be generated as the result of synthesis.
 
-![Screenshot (651)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/92910214-3b38-4892-8458-a981400bc4ca)
+![Screenshot from 2024-05-27 20-24-12](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/68e95631-435e-40e2-a1f2-62383bc11b4f)
+
+
+![Screenshot from 2024-05-28 00-00-15](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5b4817ad-f75f-4f61-b47d-3c51ce805069)
 
 Use the following commands to analyse timing using real clocks
 
