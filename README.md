@@ -162,7 +162,7 @@ The Screen shot of Propagation Delay
 
 To perform DRC correction, we have to execute the command ```wget http://opencircuitdesign.comopen_pdks/archive/drc_tests.tgz```
 
-![Screenshot (609)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/f9a41636-d13e-4f74-a709-3765c5659109)
+![Screenshot from 2024-05-27 23-30-26](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/b7646031-3dc1-49ee-ba5a-6584f86625c3)
 
 By Using command ```magic -d XR open the magic tool``` Open the met3.mag file
 
