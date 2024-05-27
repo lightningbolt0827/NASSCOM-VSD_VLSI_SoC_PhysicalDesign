@@ -21,7 +21,7 @@ OpenLane is an open-source digital ASIC (Application-Specific Integrated Circuit
 
 Synthesis is Successful
 
-![1](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/67c5e191-8f42-49e4-8944-5d67baf04089)
+![Screenshot from 2024-05-27 22-56-26](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/dfd9939f-9dd1-463f-bc46-8732a208be3c)
 
 Chip area after running the Synthesis
 
