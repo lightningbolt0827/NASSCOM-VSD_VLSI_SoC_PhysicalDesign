@@ -250,11 +250,11 @@ Then run the command ```run_synthesis``` to check the new inverter is added to t
 
 But the slack is not yet met. We can do the follwoing changes to remove the slack
 
-![Screenshot (643)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5355240b-1388-45ba-b897-b31ec588ee4b)
+![Screenshot from 2024-05-27 23-47-14](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5f64b6c7-c148-4a61-910f-167fb6d71c66)
 
 The slack is removed
 
-![Screenshot (644)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/774113c7-e7f6-4cec-b67c-09d829370b2c)
+![Screenshot from 2024-05-27 23-46-28](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0fb86015-f227-4cfd-93ec-c468aba24a6f)
 
 
 Then run the following commands to run floorplan
