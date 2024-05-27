@@ -290,12 +290,11 @@ Then use the command ```write_verilog``` to save the design into a file, which o
 ## Clock Tree Synthesis
 - Use the command ```run_cts``` to run clock tree synthesis
 
+![Screenshot from 2024-05-28 00-00-15](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5b4817ad-f75f-4f61-b47d-3c51ce805069)
+
 -  ```_cts.v``` file will be generated as the result of synthesis.
 
 ![Screenshot from 2024-05-27 20-24-12](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/68e95631-435e-40e2-a1f2-62383bc11b4f)
-
-
-![Screenshot from 2024-05-28 00-00-15](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/5b4817ad-f75f-4f61-b47d-3c51ce805069)
 
 Use the following commands to analyse timing using real clocks
 
@@ -330,7 +329,12 @@ A Power Distribution Network (PDN) in a System on Chip (SoC) ensures efficient a
 
 Using the command ```gen_pdn``` build power distribution network
 
-![Screenshot (634)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/37f2472d-0593-48be-a7e9-da7e94e98e83)
+![Screenshot from 2024-05-27 20-34-37](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/7d6b2020-2ddb-4279-80e2-e71699449283)
+
+Power Distribution is successfully completed
+
+![Screenshot from 2024-05-27 20-34-48](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/c72e93e5-9396-4698-a0a0-7d63dd6e04b2)
+
 
 ## Routing
 **Triton Routing**
@@ -348,9 +352,7 @@ TritonRouting algorithm is used for rounting.
 
 To execute the automated rounting, we run the command ```run_routing```
 
-![Screenshot (624)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6f408b5b-5ed6-4b4e-8404-80caf2c28abb)
-
-![Screenshot (633)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a4bc924e-71c9-41af-a99f-27424d985d8b)
+![Screenshot from 2024-05-27 21-09-02](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/4eb2bb55-df70-4c77-9f7d-02066b2195af)
 
 Routed Layout
 
@@ -362,7 +364,8 @@ After zooming in
 
 Final image of the layout
 
-![Screenshot (626)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/6e20d4bc-27c9-456c-af41-89015928bcee)
+![Screenshot from 2024-05-27 21-17-52](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a2a83cb7-be0f-4e34-a6f9-01d70a131c5e)
+
 
 
 
