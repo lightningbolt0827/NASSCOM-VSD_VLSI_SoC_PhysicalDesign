@@ -289,15 +289,15 @@ Then use the command ```write_verilog``` to save the design into a file, which o
 
 Use the following commands to analyse timing using real clocks
 
-```read_lef /openLANE_flow/designs/picorv32a/runs/04-05_21-50/tmp/merged.lef```
+```read_lef /openLANE_flow/designs/picorv32a/runs/27-05_14-16/tmp/merged.lef```
 
-```read_def /openLANE_flow/designs/picorv32a/runs/04-05_21-50/results/cts/picorv32a.cts.def```
+```read_def /openLANE_flow/designs/picorv32a/runs/27-05_14-16/results/cts/picorv32a.cts.def```
 
 ```write_db pico_cts.db```
 
 ```read_db pico_cts.db```
 
-```read_verilog /openLANE_flow/designs/picorv32a/runs/04-05_21-50/results/synthesis/picorv32a.synthesis_cts.v```
+```read_verilog /openLANE_flow/designs/picorv32a/runs/27-05_14-16/results/synthesis/picorv32a.synthesis_cts.v```
 
 ```read_liberty $::env(LIB_SYNTH_COMPLETE)```
 
