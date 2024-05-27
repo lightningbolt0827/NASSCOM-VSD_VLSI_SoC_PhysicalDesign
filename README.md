@@ -70,9 +70,13 @@ As shown in the floorplan, all the macros, IPs, and ports are placed in their de
 
 ![Screenshot (594)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0da32900-3613-4ced-aef1-39386229ccf7)
 
+![Screenshot from 2024-05-27 12-45-29](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/56d89dac-3fee-4ab5-8aea-a9052706247a)
+
 
 ## Placement
 To run the placement type the command ```run_placement```
+
+![Screenshot from 2024-05-27 23-17-41](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/a754fa15-d746-49c4-b0ee-c43d95a17792)
 
 We perform the global placement first which is used to achieve less wire length.
 
@@ -80,7 +84,7 @@ To Open the layout after placement type the command ```magic -T home/vsduser/Des
 
 Below is the image of the **layout after runnig placement**
 
-![Screenshot (592)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/406273b4-ff32-43f4-a83f-b03319ec9212)
+![Screenshot from 2024-05-27 12-45-46](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/d8dba3c5-baf0-4828-92ff-b54fcff8e0f8)
 
 
 # Day 3 Design of Inverter cell using and transient chara of the designed cell using spice
