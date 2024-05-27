@@ -100,13 +100,14 @@ In the next step we clone the inverter cell from the Github repository.
 
 To Clone, run the following command in working directory: ```git clone https://github.com/nickson-jose/vsdstdcelldesign.git```
 
-![Screenshot (597)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/4300d960-4494-4e29-be27-83fa4981b9a8)
+![Screenshot from 2024-05-27 23-17-57](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/0e7a0730-840e-4017-a43c-8f880a971132)
+
 
 To open the layout in Magic tool, Use the command ```magic -T {absolute_path_of_the_tech_file_of_the_cell} {absolute_path_of_the_mag_file_of_the_cell}```
 
 The inverter std_cell which was cloned is opened as shown in the figure
 
-![Screenshot (599)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/ec624432-c5cd-460b-a8bb-aa915f0b64bd)
+![Screenshot from 2024-05-27 13-32-25](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/dcc91f42-7a5a-4741-805d-9ecca51ffd0c)
 
 Characteristics of PMOS and NMOS of the inverter
 
@@ -118,7 +119,7 @@ Characteristics of PMOS and NMOS of the inverter
 
 The files are generated as shown in the figure
 
-![Screenshot (601)](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/056f69d3-9dcb-4463-bc9f-f45987fa4ca0)
+![Screenshot from 2024-05-27 23-22-37](https://github.com/lightningbolt0827/NASSCOM-VSD_VLSI_SoC_PhysicalDesign/assets/109969895/3843085b-19f1-4e59-b284-895d41c6122a)
 
 The following modifications are made in the spice file
 
